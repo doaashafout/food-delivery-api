@@ -251,21 +251,6 @@ Or test manually with Postman — import the endpoints from the table above.
 
 ---
 
-## 🐳 Redis (Optional)
-
-For the Redis rate limiter to work in scalable mode, install and start Redis:
-
-```bash
-# Windows (WSL)
-wsl sudo apt install redis-server
-wsl redis-server
-
-# The rate limiter will auto-detect Redis and use it;
-# otherwise it falls back to the in-memory custom limiter.
-```
-
----
-
 ## 📤 Deploy to GitHub
 
 ```bash
@@ -279,14 +264,13 @@ git add .
 git commit -m "Initial commit: Food API with Express Middleware Mastery"
 
 # 4. Create a repo on GitHub (without README), then:
-git remote add origin https://github.com/YOUR_USERNAME/food-api.git
+git remote add origin https://github.com/doaashafout/food-api.git
 
 # 5. Push
 git branch -M main
 git push -u origin main
 ```
 
-> ⚠️ Ensure `.env` is in `.gitignore` before pushing — it contains secrets.
 
 ---
 
